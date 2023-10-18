@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos personalizados para o cabeçalho */
+.header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos personalizados para o nome da clínica */
+.clinic-name {
+  font-size: 24px;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos personalizados para a navegação */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-item {
+  margin: 0 10px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #151313;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navigation-link:hover {
+  color: #ccc;
+}
+
+/* Estilos para o conteúdo abaixo do cabeçalho */
+.content {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; /* Faz os elementos ficarem em linha horizontal */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+.content p,
+.content h2,
+.content p:last-child {
+  margin: 0 20px; /* Adicione margem entre os elementos */
 }
